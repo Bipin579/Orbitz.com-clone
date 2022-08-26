@@ -32,3 +32,17 @@
     margin: 0px 20px;
 
 }
+
+@media only screen and (max-width:990px) and (min-width:280px){
+    #navbar>div:nth-child(2)>a{
+        display: none;
+    }
+    #navbar >div:first-child{
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+    #navbar>div:first-child>img{
+        width:60%
+     } 
+}

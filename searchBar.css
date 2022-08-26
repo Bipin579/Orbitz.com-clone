@@ -47,7 +47,8 @@
 #search-box >div:nth-child(1){
     grid-column: 1/ 7;
     border: 0px solid red;
-}#search-box >div:nth-child(2){
+}
+#search-box >div:nth-child(2){
     grid-column: 7/8;
     border: 0px solid red;
 }
@@ -74,9 +75,14 @@
 
 #search-box >div:nth-child(1)>input{
     width: 100%;
+    outline: none;
+    border: 1px solid black;
+    padding-left: 10px;
 }
 #search-box >div:nth-child(4)>input{
     width: 100%;
+    outline: none;
+    border: 1px solid black;
 }
 #search-box div>input>textarea{
     padding: 10px;
@@ -99,4 +105,87 @@ input,
 textarea{
     height: 40px;
 }
+
+@media only screen and (max-width:990px) and (min-width:581px){
+    #my-menu{
+        margin-bottom: -100px; 
+    }
+    #my-search-bar-title{
+        width: 90%;
+    }
+    #search-box >div:nth-child(1){
+        grid-column: 1/ 13;
+        border: 0px solid red;
+    }
+    #search-box >div:nth-child(2){
+        grid-column: 1/7;
+        border: 0px solid red;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+    #search-box >div:nth-child(3){
+        grid-column: 7/13;
+        border: 0px solid red;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }#search-box >div:nth-child(3)>textarea{
+        width: 100%;
+    }
+    #search-box >div:nth-child(4){
+        grid-column: 1/13;
+        border: 0px solid red;
+        border: 1px solid black;
+    }
+    #search-box >div:nth-child(5){
+        grid-column: 1/7;
+    }    
+    #search-box >div:nth-child(6){
+        grid-column: 7/13;
+    } 
+
+}
     
+@media only screen and (max-width:580px) and (min-width:280px){
+    #my-menu{
+        background: none !important;
+        margin-bottom: -150px; 
+        margin-top: -20px;
+    }
+    #my-search-bar{
+        background-color: #fff;
+        width: 100%;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    #my-search-bar-title{
+        width: 90%;
+    }
+    #search-box >div:nth-child(1){
+        grid-column: 1/ 13;
+        border: 0px solid red;
+    }
+    #search-box >div:nth-child(2){
+        grid-column: 1/7;
+        border: 0px solid red;
+        border: 1px solid black;
+    }
+    #search-box >div:nth-child(3){
+        grid-column: 7/13;
+        border: 0px solid red;
+        border: 1px solid black;
+    }
+    #search-box >div:nth-child(4){
+        grid-column: 1/13;
+        border: 0px solid red;
+        border: 1px solid black;
+    }
+    #search-box >div:nth-child(5){
+        grid-column: 1/7;
+    }    
+    #search-box >div:nth-child(6){
+        grid-column: 7/13;
+    } 
+    #btn-search>button{
+        width: 90%;
+    }   
+}

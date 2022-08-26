@@ -148,7 +148,10 @@
     background-color: #fff;
 }
 #rewards>img{
-    width: 35%;
+    /* width: 35%; */
+    width: 451px;
+    height: auto;
+    object-fit: cover;
 }
 #rewards>div{
     display: grid;
@@ -183,4 +186,91 @@
 }
 
 
+@media only screen and (min-width:580px) and (max-width:990px){
+    #second-child-mid>div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 25px;
+    }
+    #traveling-tips>div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        margin-top: 20px;
+    }
+    #rewards>div{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 30px;
+        border: 0px solid red;
+        width: 100%;
+    }
+    #rewards>div>div:nth-child(1){
+        grid-column: 1/5;
+        border: 0px solid blue;
+        padding: 20px;
+    }
+    #rewards>div>:nth-child(2){
+        display: none;
+    }
+    #rewards>div>div:nth-child(1)>h5,.rewards-div1-btn-1,.rewards-div1-btn-2,.rewards-p{
+        display: none;
+    }
+    #rewards>img{
+        /* width: 35%; */
+        width: 35%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+}
 
+@media only screen and (min-width:280px) and (max-width:579px){
+    #first-child-mid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #second-child-mid>div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 25px;
+    }
+    #traveling-tips>div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        margin-top: 20px;
+    }
+    #cancel-coupon>div{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #rewards>div{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 30px;
+        border: 0px solid red;
+        width: 100%;
+    }
+    #rewards>div>div:nth-child(1){
+        grid-column: 1/5;
+        border: 0px solid blue;
+        padding: 20px;
+    }
+    #rewards>div>:nth-child(2){
+        display: none;
+    }
+    #rewards>div>div:nth-child(1)>h5,.rewards-div1-btn-1,.rewards-div1-btn-2,.rewards-p{
+        display: none;
+    }
+    #rewards{
+        flex-direction: column;
+    }
+    #rewards>img{
+        /* width: 35%; */
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .rewards-div1-btn{
+        grid-column: 1/5;
+    }
+}
