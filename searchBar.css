@@ -128,7 +128,7 @@ textarea{
         border: 0px solid red;
         border: 1px solid black;
         box-sizing: border-box;
-    }#search-box >div:nth-child(3)>textarea{
+    }#search-box >div:nth-child(3)>input,#search-box >div:nth-child(2)>input{
         width: 100%;
     }
     #search-box >div:nth-child(4){
@@ -156,9 +156,16 @@ textarea{
         width: 100%;
         margin: auto;
         box-sizing: border-box;
+        padding: 5px;
     }
     #my-search-bar-title{
-        width: 90%;
+        width: 95%;
+    }
+    #my-search-bar-title>div{
+        font-size: 10px;
+    }
+    #search-box{
+        width: 95%;
     }
     #search-box >div:nth-child(1){
         grid-column: 1/ 13;
@@ -173,6 +180,9 @@ textarea{
         grid-column: 7/13;
         border: 0px solid red;
         border: 1px solid black;
+    }
+    #search-box >div:nth-child(3)>input,#search-box >div:nth-child(2)>input{
+        width: 100%;
     }
     #search-box >div:nth-child(4){
         grid-column: 1/13;

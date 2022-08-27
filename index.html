@@ -28,30 +28,30 @@
                 More Travel
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <button class="dropdown-item" type="button">Stays</button>
-                <button class="dropdown-item" type="button">Flight</button>
-                <button class="dropdown-item" type="button">Package</button>
-                <button class="dropdown-item" type="button">Cars</button>
-                <button class="dropdown-item" type="button">Cruises</button>
-                <button class="dropdown-item" type="button">Things to do</button>                
-                <button class="dropdown-item" type="button">Deals</button>                
-                <button class="dropdown-item" type="button">Groups & Meetings</button>                
-                <button class="dropdown-item" type="button">Travel blog</button>                
+                <button class="dropdown-item" type="button"><a href="trip.html">Stays</a></button>
+                <button class="dropdown-item" type="button"><a href="trip.html">Flight</a></button>
+                <button class="dropdown-item" type="button"><a href="trip.html">Package</a></button>
+                <button class="dropdown-item" type="button"><a href="trip.html">Cars</a></button>
+                <button class="dropdown-item" type="button"><a href="trip.html">Cruises</a></button>
+                <button class="dropdown-item" type="button"><a href="trip.html">Things to do</a></button>                
+                <button class="dropdown-item" type="button"><a href="trip.html">Deals</a></button>                
+                <button class="dropdown-item" type="button"><a href="trip.html">Groups & Meetings</a></button>                
+                <button class="dropdown-item" type="button"><a href="trip.html">Travel Blog</a></button>                
 
                 </div>
             </div>
         </div>
         <div>
-            <a href="./index.html">
+            <a class="hide-tag" href="./index.html">
                 <p>Espanol</p>
             </a>
-            <a href="">
+            <a class="hide-tag" href="trip.html">
                 <p>List Your Property</p>
             </a>
-            <a href="">
+            <a class="hide-tag" href="trip.html">
                 <p>Support</p>
             </a>
-            <a href="">
+            <a class="hide-tag" href="trip.html">
                 <p>Trip</p>
             </a>
             <a href="./signIn.html">
@@ -136,8 +136,10 @@
             <!-- =================================================================================== -->
             <div id="top-deals">
                 <img src="./top-deals.jpg" alt="">
-                <h3>Today's top deals</h3>
-                <p>Vaccations are even more rewarding with our best offers</p>
+                <div>
+                    <h3>Today's top deals</h3>
+                    <p>Vaccations are even more rewarding with our best offers</p>
+                </div>
             </div>
     
             <!-- =========================================================================================== -->
@@ -167,18 +169,18 @@
                     <div>
                         <img src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_NationalParks_imgB_1199x399_20211117.jpg" alt="">
                         <div>
-                            <h4>National Parks</h4>
-                            <p>There's plenty to keep you busy</p>
-                            <button>Learn more</button>
+                            <h4 class="tips-h4">National Parks</h4>
+                            <p class="tips-p">There's plenty to keep you busy</p>
+                            <button class="tips-button">Learn more</button>
                         </div>
     
                     </div>
                     <div>
                         <img src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_RoadTrips_imgB_1199x399_20211117.jpg" alt="">
                         <div>
-                            <h4>The perfect road trip</h4>
-                            <p>Find an adventure for every season</p>
-                            <button>Read on</button>
+                            <h4 class="tips-h4">The perfect road trip</h4>
+                            <p class="tips-p">Find an adventure for every season</p>
+                            <button class="tips-button">Read on</button>
                         </div>
     
                     </div>
@@ -293,3 +295,12 @@
 
 </body>
 </html>
+
+
+
+<script>
+    let logo = document.querySelector("#navbar>div>img");
+    logo.addEventListener("click",function(){
+        document.location.href="index.html";
+    })
+</script>

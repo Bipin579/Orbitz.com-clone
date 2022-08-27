@@ -1,0 +1,26 @@
+*{
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+    /* background-color: rgb(245,245,245); */
+}
+body{
+    background-color: rgb(245,245,245);
+}
+
+#create-acc{
+    width: 50%;
+    margin: 150px auto;
+    text-align: center;
+    background-color: rgba(198, 241, 57, 0.359);
+    padding: 20px;
+}
+#create-acc>h4{
+    padding: 10px 30px;
+}
+
+@media only screen and (min-width:280px) and (max-width:800px){
+    #create-acc{
+        width: 70%;
+    }
+}

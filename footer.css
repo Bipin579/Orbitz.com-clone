@@ -52,5 +52,17 @@
     #footer-child1 >div:last-child{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        gap: 0px;
+    }
+    p{
+        white-space: 0.2;
+    }
+    #footer-child1 >div>:last-child>div{
+        padding: 0px;
+    }
+    #footer-child1 >div:last-child>div:nth-child(1),#footer-child1 >div:last-child>div:nth-child(2),#footer-child1 >div:last-child>div:nth-child(3),
+    #footer-child1 >div:last-child>div:nth-child(4){
+        box-sizing: border-box;
+        width: 100%;
     }
 }

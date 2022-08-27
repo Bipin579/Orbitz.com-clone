@@ -74,18 +74,13 @@
 #top-deals>img{
     width: 100%;
 }
-#top-deals>h3{
+#top-deals>div{
     position: absolute;
-    bottom: 40px;
+    bottom: 30px;
     left: 10px;
     color: whitesmoke;
 }
-#top-deals>p{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: white;
-}
+
 
 
 /* ==================================================================================== */
@@ -239,6 +234,26 @@
         grid-template-columns: repeat(1,1fr);
         gap: 30px;
         margin-top: 20px;
+    }
+    .tips-h4{
+        font-size: medium;
+        margin: 0px;
+    }
+    .tips-p{
+        font-size: smaller;
+        margin: 0px;
+    }
+    .tips-button{
+        font-size: smaller;
+        margin: 0px;
+    }
+    #top-deals>div{
+        font-size: 0.6rem;
+        bottom: 10px;
+        width: 100%;
+        height: 50%;
+    }#top-deals>div>h3{
+        font-size: small;
     }
     #cancel-coupon>div{
         grid-template-columns: repeat(1,1fr);

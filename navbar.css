@@ -34,7 +34,7 @@
 }
 
 @media only screen and (max-width:990px) and (min-width:280px){
-    #navbar>div:nth-child(2)>a{
+    .hide-tag{
         display: none;
     }
     #navbar >div:first-child{
