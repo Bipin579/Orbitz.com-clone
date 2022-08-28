@@ -76,15 +76,15 @@
                 </div>
                 <hr style="border: 0px solid black; height: 2px; background-color: rgba(0, 0, 0, 0.228); margin-bottom: 20px;">
                 <div id="search-box">
-                    <div><input type="search" placeholder="Going to"></div>
-                    <div><input type="date" placeholder="Check-in"></div>
-                    <div><input type="date" placeholder="Check-out"></div>
+                    <div><input id="where" type="search" placeholder="Going to"></div>
+                    <div><input id="startDate" type="date" placeholder="Check-in"></div>
+                    <div><input id="endDate" type="date" placeholder="Check-out"></div>
                     <div><input style="background-color: white;" type="button" placeholder="" value="Travelers 1 room 2 traverlers"></div>
-                    <div><input type="checkbox"><span>Add a flight</span></div>
-                    <div><input type="checkbox" value=""><span>Add a car</span></div>
+                    <div><input id="addFlight" type="checkbox"><span>Add a flight</span></div>
+                    <div><input id="addCar" type="checkbox" value=""><span>Add a car</span></div>
                 </div>
                 <div id="btn-search">
-                    <button>Search</button>
+                    <button id="getSearch">Search</button>
                 </div>
     
             </div>
@@ -303,4 +303,25 @@
     logo.addEventListener("click",function(){
         document.location.href="index.html";
     })
+
+    let booking = document.querySelector("#getSearch");
+    booking.addEventListener("click",function(){
+        let sValue= document.querySelector("#where").value;
+        let sDate = document.querySelector("#startDate").value;
+        let eDate = document.querySelector("#endDate").value;
+
+        let addFlight= document.querySelector("#addFlight").checked;
+        let addCar = document.querySelector("#addCar").checked;
+        if(addFlight===true){
+            alert(`Your booking for flight ticket has confirmed from our side and your tour date from ${sDate} to ${eDate} please confirm from your email`);
+            location.reload();
+        }
+        if(addCar===true){
+            alert(`Your booking for cab has confirmed from our side and your tour date from ${sDate} to ${eDate} please confirm from your email`);
+            location.reload();
+        }
+        
+    })
+
+
 </script>
