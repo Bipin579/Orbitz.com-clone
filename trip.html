@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbitz Support</title>
+    <link rel="stylesheet" href="./navbar.css">
+
+    <!-- my bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- end -->
+
+    <link rel="stylesheet" href="./trip.css">
+    <link rel="stylesheet" href="./footer.css">
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <img src="https://www.orbitz.com/_dms/header/logo.svg?locale=es_MX&siteid=70201&2" alt="">
+            <div class="dropdown" style="margin-left: -40px;">
+                <button class="btn  dropdown-toggle btn-sm" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #00253c; color: white; border: none; ">
+                More Travel
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button"><a href="trip.html">Stays</a></button>
+                <button class="dropdown-item" type="button"><a href="trip.html">Flight</a></button>
+                <button class="dropdown-item" type="button"><a href="trip.html">Package</a></button>
+                <button class="dropdown-item" type="button"><a href="trip.html">Cars</a></button>
+                <button class="dropdown-item" type="button"><a href="trip.html">Cruises</a></button>
+                <button class="dropdown-item" type="button"><a href="trip.html">Things to do</a></button>                
+                <button class="dropdown-item" type="button"><a href="trip.html">Deals</a></button>                
+                <button class="dropdown-item" type="button"><a href="trip.html">Groups & Meetings</a></button>                
+                <button class="dropdown-item" type="button"><a href="trip.html">Travel Blog</a></button>                
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <a class="hide-tag" href="./index.html">
+                <p>Espanol</p>
+            </a>
+            <a class="hide-tag" href="trip.html">
+                <p>List Your Property</p>
+            </a>
+            <a class="hide-tag" href="trip.html">
+                <p>Support</p>
+            </a>
+            <a class="hide-tag" href="trip.html">
+                <p>Trip</p>
+            </a>
+            <a href="./signIn.html">
+                <p>Sign In</p>
+            </a>
+        </div>
+    </div> 
+
+
+
+    <div id="create-acc">
+        <h4 style="background-color: rgba(234, 255, 0, 0.381);">Please Create a account <a href="signIn.html">Sign In</a></h4>
+        <h4 style="background-color: rgba(0, 255, 179, 0.381);">Already have an account <a href="signIn.html">Log In</a></h4>
+
+    </div>
+
+    
+    <!-- ---------------------------------------------------------Footer Start------------------------------------------- -->
+    <footer style="padding: 30px; background-color: rgb(245,245,245);">
+        <div id="footer-child1">
+            <div>
+                <img style="margin-top: 20px;" src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="">
+            </div>
+            <div>
+                <div>
+                    <p style="font-weight:bold ; color: black; cursor: default;">Contact</p>
+                    <p>About</p>
+                    <p>Jobs</p>
+                    <p>List your property</p>
+                    <p>Partnership</p>
+                    <p>Newsroom</p>
+                    <p>Investors Relation</p>
+                    <p>Site Map</p>
+                    <p>Orbitz Rewards</p>
+                    <p>Site Map</p>
+                </div>
+
+                <div>
+                    <p style="font-weight:bold ; color: black; cursor: default;">Explore</p>
+                    <p>Hotels in United States</p>
+                    <p>Vacation Rentals in United States</p>
+                    <p>Car Rentals in United States</p>
+                    <p>Domestic Flights</p>
+                    <p>Vacation Packages in United States</p>
+                    <p>Orbitz Reviews</p>
+                    <p>Orbitz Coupons</p>
+                    <p>LGBTQ Travel</p>
+                    <p>Unique Accommodations</p>
+                    <p>Travel Blog</p>
+                </div>
+
+                <div>
+                    <p style="font-weight:bold ; color: black;  cursor: default;">Policies</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Use</p>
+                    <p>Vrbo terms and conditions</p>
+                    <p>Orbitz Rewards Terms</p>
+                    <p>Do not sell my personal information</p>
+                </div>
+
+                <div>
+                    <p style="font-weight:bold ; color: black;  cursor: default;">Help</p>
+                    <p>Support</p>
+                    <p>Cancel your hotel or vacation rental booking</p>
+                    <p>Cancel your flight</p>
+                    <p>Refund timelines, policies & processes</p>
+                    <p>Use an Orbitz Coupon</p>
+                </div>
+
+            </div>
+        </div>
+        
+        <div style="text-align: center; font-size: 12px;" id="footer-child2">
+            <p>© 2022 Orbitz, LLC, an Expedia Group Company. All rights reserved.</p>
+            <p>Orbitz, Orbitz.com, and the Orbitz logo are trademarks or registered trademarks of Orbitz, LLC. CST# 2083930-50.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+<script>
+    let logo = document.querySelector("#navbar>div>img");
+    logo.addEventListener("click",function(){
+        document.location.href="index.html";
+    })
+</script>

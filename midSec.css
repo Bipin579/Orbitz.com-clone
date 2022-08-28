@@ -1,0 +1,291 @@
+*{
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+    /* background-color: rgb(245,245,245); */
+}
+#mid-container{
+    background-color: rgb(245,245,245);
+}
+#mid-container{
+    padding: 30px;
+}
+
+#first-child-mid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+#first-child-mid>div>img{
+    width: 100%;
+}
+#first-child-mid>div{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+
+/* =============================================================================================== */
+
+
+#second-child-mid{
+    margin-top: 30px;
+}
+#second-child-mid>h1{
+    color: black;
+    font-weight: 400;
+}
+#second-child-mid>div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+#second-child-mid>div>div>img{
+    width: 100%;
+}
+#second-child-mid>div>div{
+    position: relative;
+}
+.overlay-text-h3{
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+}
+.overlay-text-p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: whitesmoke;
+    font-size: 10px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+
+/* =========================================================================================== */
+
+#top-deals{
+    margin-top: 60px;
+    position: relative;
+}
+#top-deals>img{
+    width: 100%;
+}
+#top-deals>div{
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    color: whitesmoke;
+}
+
+
+
+/* ==================================================================================== */
+
+#cancel-coupon{
+    margin-top: 40px;
+}
+#cancel-coupon>div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin: auto;
+    margin-top: 15px;
+}
+#cancel-coupon>div>div{
+    border: 1px solid black;
+    padding: 12px 12px;
+    background-color: white;
+}
+#cancel-coupon>div>div>p{
+    font-size: 70%;
+}
+
+
+/* ===================================================================================== */
+
+#traveling-tips{
+    margin-top: 40px;
+}
+#traveling-tips>div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+#traveling-tips>div>div>img{
+    width: 100%;
+    filter: brightness(70%);
+}
+#traveling-tips>div>div{
+    position: relative;
+    color: white;
+}
+#traveling-tips>div>div>div{
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+}
+#traveling-tips>div>div>div>button{
+    border: none;
+    border-radius: 3px;
+    color: rgb(90, 194, 239);
+}
+
+/* ============================================================================================================ */
+
+#rewards{
+    margin-top: 40px;
+    display: flex;
+    background-color: #fff;
+}
+#rewards>img{
+    /* width: 35%; */
+    width: 451px;
+    height: auto;
+    object-fit: cover;
+}
+#rewards>div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    border: 0px solid red;
+    width: 65%;
+}
+#rewards>div>div:nth-child(1){
+    grid-column: 1/4;
+    border: 0px solid blue;
+    padding: 20px;
+}
+#rewards>div>div:nth-child(1)>p{
+    font-size: 170%;
+    font-weight: 700;
+}
+#rewards>div>div:nth-child(1)>ul{
+    font-size: 90%;
+    padding: 20px;
+    margin-top: -20px;
+    opacity: 80%;
+}
+/* this is for creating three small buttons */
+#rewards>div>div:nth-child(1)>div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.rewards-div1-btn{
+    border: 1px solid black;
+}
+
+
+@media only screen and (min-width:580px) and (max-width:990px){
+    #second-child-mid>div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 25px;
+    }
+    #traveling-tips>div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        margin-top: 20px;
+    }
+    #rewards>div{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 30px;
+        border: 0px solid red;
+        width: 100%;
+    }
+    #rewards>div>div:nth-child(1){
+        grid-column: 1/5;
+        border: 0px solid blue;
+        padding: 20px;
+    }
+    #rewards>div>:nth-child(2){
+        display: none;
+    }
+    #rewards>div>div:nth-child(1)>h5,.rewards-div1-btn-1,.rewards-div1-btn-2,.rewards-p{
+        display: none;
+    }
+    #rewards>img{
+        /* width: 35%; */
+        width: 35%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+}
+
+@media only screen and (min-width:280px) and (max-width:579px){
+    #first-child-mid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #second-child-mid>div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 25px;
+    }
+    #traveling-tips>div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        margin-top: 20px;
+    }
+    .tips-h4{
+        font-size: medium;
+        margin: 0px;
+    }
+    .tips-p{
+        font-size: smaller;
+        margin: 0px;
+    }
+    .tips-button{
+        font-size: smaller;
+        margin: 0px;
+    }
+    #top-deals>div{
+        font-size: 0.6rem;
+        bottom: 10px;
+        width: 100%;
+        height: 50%;
+    }#top-deals>div>h3{
+        font-size: small;
+    }
+    #cancel-coupon>div{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #rewards>div{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 30px;
+        border: 0px solid red;
+        width: 100%;
+    }
+    #rewards>div>div:nth-child(1){
+        grid-column: 1/5;
+        border: 0px solid blue;
+        padding: 20px;
+    }
+    #rewards>div>:nth-child(2){
+        display: none;
+    }
+    #rewards>div>div:nth-child(1)>h5,.rewards-div1-btn-1,.rewards-div1-btn-2,.rewards-p{
+        display: none;
+    }
+    #rewards{
+        flex-direction: column;
+    }
+    #rewards>img{
+        /* width: 35%; */
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .rewards-div1-btn{
+        grid-column: 1/5;
+    }
+}
